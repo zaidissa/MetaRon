@@ -94,14 +94,14 @@ Make predictions
 ------------------
 Metagenomic operon prediction could be performed by providing filtered raw reads under the process "ago" i.e. assembly, gene prediction and operon identification
 
-## test_sample: ERR022075.1.fastq & ERR022075.2.fastq
+	## test_sample: ERR022075.1.fastq & ERR022075.2.fastq
 
 	metaron --sample ERR022075 --process ago --read_type merge OR paired --read_length r OR l --paired_1 ~/path/to/ERR022075.1.fastq --paired_2 ~/path/to/ERR022075.2.fastq --output ~/path/to/output/directory/
 
 If metagenomic scaffolds and gene predictions are already available, the user can predict operon under the process "op"
 
-## test_assembly: ERR022075_scaf.fa 
-## test_gene_prediction: ERR022075_MC
+	## test_assembly: ERR022075_scaf.fa 
+	## test_gene_prediction: ERR022075_MC
 
 	metaron --sample ERR022075 --process op --igp ERR022075_MC --isc ERR022075_scaf.fa --tool 1 OR 2 --output ~/path/to/output/directory/
 
