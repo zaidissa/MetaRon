@@ -40,7 +40,7 @@ to find the available commands and required parameters to run MetaRon.
 
   -h,	--help            
 	Show this help message and exit					
-  -n	--sample
+  -n,	--sample
   	Sample name without any dot, underscore or dash
 						
   -p 	PROCESS, 		        --process
