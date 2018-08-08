@@ -39,10 +39,9 @@ to find the available commands and required parameters to run MetaRon.
 
 
   -h,	--help            
-	Show this help message and exit
-						
+	Show this help message and exit					
   -n	--sample
-        Sample name without any dot, underscore or dash
+  	Sample name without any dot, underscore or dash
 						
   -p 	PROCESS, 		        --process
 			1. ago: assembly gene prediction and operon prediciton
