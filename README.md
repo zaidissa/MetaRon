@@ -13,6 +13,9 @@ Prerequisites
 MetaRon requires:
 
 	* Python (2.7 )
+	* IDBA (iterative De Bruijn Graph De Novo Assembler)
+	* Prodigal
+	* BDGP: Neural Network Promoter Prediction 2.0
 
 Install MetaRon
 ---------------
@@ -57,19 +60,19 @@ If 'op', please provide the following parameters:
 --sample, --process, --igp, --isc, --tool, --output 
 	
   -rt,	--read_type            
-	Enter read type. 'merge' if the reads are paired-end in two file. 'paired' if the reads are paired-end in one file.
+	Enter read type. 'merge' if the reads are paired-end in two files. 'paired' if the reads are paired-end in one file.
   
   -rl,	--read_length            
-	Enter 'l'if read length is longer than 128 bases and 'r' if read length is shorter than 128 bases
+	Enter 'l' if read length is longer than 128 bases and 'r' if read length is shorter than 128 bases
   
   -pe1,	--paired_1            
-	Enter enter paired read file 1
+	Enter paired read file 1
   
   -pe2,	--paired_2            
-	Enter enter paired read file 2
+	Enter paired read file 2
   
   -pm,	--paired_merged            
-	Enter the paired end read file if both pairedend reads are in one file
+	Enter the paired end read file if both paired-end reads are in one file
   
   -i,	--igp            
 	Select the gene prediction .tab file generated via MetageneMark or Prodigal
