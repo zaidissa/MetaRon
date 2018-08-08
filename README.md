@@ -40,13 +40,13 @@ to find the available commands and required parameters to run MetaRon.
 
   -h,	--help            
 	Show this help message and exit
-	
-  -n,	--sample
-  	Sample name without any dot/underscore/dash
-						
-  -p 	PROCESS, 		        --process
-			1. ago: assembly gene prediction and operon prediciton
-                        2. op: operon prediction only. 
+  
+  -n,	--sample            
+	Sample name without any dot/underscore/dash
+  
+  -p,	--process            
+	1. ago: assembly gene prediction and operon prediciton
+        2. op: operon prediction only. 
 
 If 'ago', please provide the following parameters:
 
@@ -55,35 +55,35 @@ If 'ago', please provide the following parameters:
 If 'op', please provide the following parameters:
 
 --sample, --process, --igp, --isc, --tool, --output 
-
-  -rt 	READ_TYPE,        --read_type
-                          Enter read type. 'merge' if the reads are paired-end in two file. 'paired' if the reads are paired-end in one file.
-                        						
-  -rl 	READ_LENGTH,	    --read_length
-                          Enter 'l'if read length is longer than 128 bases and 'r' if read length is shorter than 128 bases
-                         
-  -pe1 	PAIRED_1, 		    --paired_1
-                          Enter enter paired read file 1
+	
+  -rt,	--read_type            
+	Enter read type. 'merge' if the reads are paired-end in two file. 'paired' if the reads are paired-end in one file.
   
-  -pe2 	PAIRED_2, 		    --paired_2
-                          Enter enter paired read file 2
+  -rl,	--read_length            
+	Enter 'l'if read length is longer than 128 bases and 'r' if read length is shorter than 128 bases
   
-  -pm 	PAIRED_MERGED, 	   --paired_merged
-                          Enter the paired end read file if both pairedend reads are in one file
-                        
-  -i 	IGP, 			          --igp      
-						              Select the gene prediction .tab file generated via MetageneMark or Prodigal
-                         
-  -j 	ISC, 			          --isc
-						              Select the file containing all scaftigs
+  -pe1,	--paired_1            
+	Enter enter paired read file 1
   
-  -t 	TOOL, 			        --tool
-						              Enter 1 for MetaGeneMark, 2 for Prodigal
+  -pe2,	--paired_2            
+	Enter enter paired read file 2
   
-  -o 	OUTPUT, 		        --output
-                          Enter output destination folder
-
-
+  -pm,	--paired_merged            
+	Enter the paired end read file if both pairedend reads are in one file
+  
+  -i,	--igp            
+	Select the gene prediction .tab file generated via MetageneMark or Prodigal
+  
+  -j,	--isc            
+	Select the file containing all scaftigs
+  
+  -t,	--tool            
+	Enter 1 for MetaGeneMark, 2 for Prodigal
+  
+  -o,	--output            
+	Enter output destination folder
+  
+  
 =======================================================*NOTE*=======================================================
 
 If the selected --process is  'op', then please refer to the provided scaftig and gene prediction file format
