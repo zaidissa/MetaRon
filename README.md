@@ -49,8 +49,11 @@ to find the available commands and required parameters to run MetaRon.
                         2. op: operon prediction only. 
 
 If 'ago', please provide the following parameters:
+
 --sample,--process, --read_type, --read_length, --paired_1, --paired_2, --output
+
 If 'op', please provide the following parameters:
+
 --sample, --process, --igp, --isc, --tool, --output 
 
   -rt 	READ_TYPE,        --read_type
