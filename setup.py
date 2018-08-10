@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+
+"""
+This is a setup script file for MetaRon -- a Metagenomic opeRon prediction pipeline.
+This is a freeware; user is allowed to redistribute it and/or modify it under the terms and
+conditions of BSD License (see the file LICENSE.mc included with the distribution).
+@version: 1.0
+@author: Syed Shujaat Ali Zaidi
+@email: syedshujaat@comsats.edu.pk; syedzaidi85@hotmail.co.uk
+"""
+
+import os
+from distutils.core import setup
+from setuptools import find_packages
+## from setuptools import setup
+
+#from metaron import __version__
+
+#VERSION = __import__("metaron").__version__
+VERSION = '1.0'
+
+CLASSIFIERS = [
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: Linux',
+    'Programming Language :: Python :: 2.7',
+    'Topic :: Scientific/Engineering :: Bio-Informatics :: Data-Management',
+]
+
+install_requires = [
+    'argparse'
+	
+]
+
+setup(
+    name="metaron",
+    description="Metagenomic opeRon prediction pipeline",
+    version='1.0',
+    author="Syed Shujaat Ali Zaidi",
+    #Keywords= "bioinformatics,metagenomics, operon prediction",
+    author_email="syedshujaat@comsats.edu.pk, syedzaidi85@hotmail.co.uk",
+    url="https://github.com/zaidissa/MetaRon",
+    package_dir={'metaron': 'metaron'},
+    packages=['metaron'],
+    scripts=['metaron/metaron',
+                   ],
+    
+    install_requires = install_requires,
+    classifiers=CLASSIFIERS,
+)
