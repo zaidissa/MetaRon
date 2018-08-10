@@ -16,8 +16,7 @@ from setuptools import find_packages
 
 #from metaron import __version__
 
-#VERSION = __import__("metaron").__version__
-VERSION = '1.0'
+VERSION = __import__("metaron").__version__
 
 CLASSIFIERS = [
     'Intended Audience :: Developers',
@@ -36,7 +35,7 @@ install_requires = [
 setup(
     name="metaron",
     description="Metagenomic opeRon prediction pipeline",
-    version='1.0',
+    version=VERSION,
     author="Syed Shujaat Ali Zaidi",
     #Keywords= "bioinformatics,metagenomics, operon prediction",
     author_email="syedshujaat@comsats.edu.pk, syedzaidi85@hotmail.co.uk",
