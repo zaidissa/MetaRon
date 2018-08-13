@@ -1,9 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from itertools import groupby
 from optparse import OptionParser
 from inspect import getsourcefile
 from os.path import abspath
-import csv, re, sys, socket, string, random, os, subprocess, time, shutil,
-errno, os.path, argparse
+import csv, re, sys, socket, string, random, os, subprocess, time, shutil, errno, os.path, argparse
 start_time = time.time()
 
 def main():
