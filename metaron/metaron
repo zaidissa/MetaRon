@@ -1617,7 +1617,8 @@ def Prom_clustering():
 def  config_file_check():
     global NNPP2_path
     print 'config_file_check start'
-    My_prog_path =  os.path.dirname(os.path.abspath(__file__))
+    #My_prog_path =  os.path.dirname(os.path.abspath(__file__))
+    My_prog_path =  os.path.dirname(os.getcwd())
     print My_prog_path
     wd = os.getcwd()
     tmp = os.path.exists(My_prog_path+"/config.txt")
