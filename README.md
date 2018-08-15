@@ -15,7 +15,7 @@ MetaRon requires:
 	* Python (2.7 )
 	* IDBA (iterative De Bruijn Graph De Novo Assembler) [conda install -c bioconda idba]
 	* Prodigal [conda install -c bioconda prodigal]
-	* BDGP: Neural Network Promoter Prediction 2.2 (.tar file included within)
+	* BDGP: Neural Network Promoter Prediction 2.2
 
 
 Install MetaRon
