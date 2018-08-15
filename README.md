@@ -52,14 +52,18 @@ to find the available commands and required parameters to run MetaRon.
 	1. ago: assembly gene prediction and operon prediciton
         2. op: operon prediction only. 
 
+
 If 'ago', please provide the following parameters:
 
 --sample,--process, --read_type, --read_length, --paired_1, --paired_2, --output
 
+
 If 'op', please provide the following parameters:
 
 --sample, --process, --igp, --isc, --tool, --output 
-	
+
+
+
   -rt,	--read_type            
 	Enter read type. 'merge' if the reads are paired-end in two files. 'paired' if the reads are paired-end in one file.
   
