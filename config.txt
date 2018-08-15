@@ -1,1 +1,1 @@
-
+NNPP2.2_path=<PATH_TO_NNPP2.2>
