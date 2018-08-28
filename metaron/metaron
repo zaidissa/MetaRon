@@ -3,7 +3,7 @@
 MetaRon - Metagenomic opeRon Prediction pipeline
 Created on Tuesday July 12 14:32:15 2018
 Version 1.0
-@suthor: Syed Shujaat Ali Zaidi
+@author: Syed Shujaat Ali Zaidi
 """
 
 from itertools import groupby
