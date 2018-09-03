@@ -22,9 +22,9 @@ CLASSIFIERS = [
     'Intended Audience :: Developers',
     'Intended Audience :: Science/Research',
     'License :: OSI Approved :: BSD License',
-    'Operating System :: Linux',
+    'Operating System :: OS Independent',
     'Programming Language :: Python :: 2.7',
-    'Topic :: Scientific/Engineering :: Bio-Informatics :: Data-Management',
+    'Topic :: Scientific/Engineering :: Bio-Informatics',
 ]
 
 install_requires = [
