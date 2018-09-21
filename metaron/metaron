@@ -1586,8 +1586,10 @@ def  config_file_check():
     My_prog_path =  os.path.dirname(os.path.abspath(__file__))
 ##    print 'path to cwd', My_prog_path
     wd = os.getcwd()
-    print 'Current Working Directory: ',wd
+##    print 'Current Working Directory: ',wd
     tmp = os.path.exists(wd+"/config.txt")
+    size = os.stat(wd+"/config.txt").st_size
+##    print size
     if tmp == True:
         size = os.stat(wd+"/config.txt").st_size == 0
         if size == False:
@@ -1606,7 +1608,7 @@ def  config_file_check():
                         ss = w[1]
                         if os.path.exists(ss+"/bin/fa2TDNNpred-PRO.linux"):
                             NNPP2_path = w[1]
-                            print NNPP2_path
+                            print 'nnpp path', NNPP2_path
     if tmp == False or size == True:
         with open (wd+"/config.txt", 'w+')as openfile1:
             NNPP2_path = raw_input('Enter path for NNPP2.2 directory')
