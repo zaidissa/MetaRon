@@ -1622,8 +1622,8 @@ def  config_file_check():
 ##    global NNPP2_path
     return 
 
-##def Processing_details(file_name, start_time, total_loops):
-def Processing_details(start_time):
+def Processing_details(file_name, start_time, total_loops):
+##    def Processing_details(start_time):
 ##    print "Total entries processed", len(file_name)
 ##    print 'Total Promoter prediction attempted', counter
     end_time = time.time()
