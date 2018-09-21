@@ -97,8 +97,6 @@ If 'op', please provide the following parameters:
 1- If the selected --process is  'op', then please refer to the provided scaftig and gene prediction file format
 
 2- Add NNPP2.2 path to the config.txt file
-
-3- Metaron must be your current working directory
  
 ====================================================================================================================
 
