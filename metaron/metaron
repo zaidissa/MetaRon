@@ -227,7 +227,7 @@ def main():
         Processing_details(file_name, start_time, counter)
 
     elif process_selector == "op":
-        print '********************************** METAGENOMIC OPERON PREDICTION **********************************'
+        print '\n\n********************************** METAGENOMIC OPERON PREDICTION **********************************\n\n'
         scaf_len(old_pathname)
 ##        header_replacer_F()
 ##
@@ -1584,12 +1584,9 @@ def  config_file_check():
     global NNPP2_path
     print 'config_file_check start'
     My_prog_path =  os.path.dirname(os.path.abspath(__file__))
-##    print 'path to cwd', My_prog_path
     wd = os.getcwd()
-##    print 'Current Working Directory: ',wd
     tmp = os.path.exists(wd+"/config.txt")
     size = os.stat(wd+"/config.txt").st_size
-##    print size
     if tmp == True:
         size = os.stat(wd+"/config.txt").st_size == 0
         if size == False:
@@ -1609,7 +1606,7 @@ def  config_file_check():
                         if os.path.exists(ss+"/bin/fa2TDNNpred-PRO.linux"):
                             NNPP2_path = w[1]
                             print 'nnpp path', NNPP2_path
-    if tmp == False or size == True:
+    if tmp == False:
         with open (wd+"/config.txt", 'w+')as openfile1:
             NNPP2_path = raw_input('Enter path for NNPP2.2 directory')
             if os.path.exists(NNPP2_path+"/bin/fa2TDNNpred-PRO.linux"):
@@ -1622,8 +1619,8 @@ def  config_file_check():
 ##    global NNPP2_path
     return 
 
-def Processing_details(file_name, start_time, total_loops):
-##    def Processing_details(start_time):
+##def Processing_details(file_name, start_time, total_loops):
+def Processing_details(file_name, start_time, counter):
 ##    print "Total entries processed", len(file_name)
 ##    print 'Total Promoter prediction attempted', counter
     end_time = time.time()
