@@ -1047,6 +1047,7 @@ def Data_saving4(new_k, new_scaftig_no, new_gene1_name, new_gene2_name, new_stra
 
 
 def promoter_prediction(upstream_seq_file):
+    global NNPP2_path
     print 'Promoter Prediction'
 
     try:
@@ -1578,26 +1579,29 @@ def Prom_clustering():
         print 'Number of entries for each gene are not equal, please correct the data and run again'
         exit()
     print 'Prom_clustering completed'
+    
     return
 
 def  config_file_check():
     global NNPP2_path
     print 'config_file_check start'
     My_prog_path =  os.path.dirname(os.path.abspath(__file__))
+    print My_prog_path
     wd = os.getcwd()
-    tmp = os.path.exists(wd+"/config.txt")
-    size = os.stat(wd+"/config.txt").st_size
-    if tmp == True:
+##    wd = My_prog_path
+##    tmp = os.path.exists(wd+"/config.txt")
+##    size = os.stat(wd+"/config.txt").st_size
+    if os.path.exists(wd+"/config.txt") == True:
         size = os.stat(wd+"/config.txt").st_size == 0
         if size == False:
             with open (wd+"/config.txt", 'r')as openfile:
                 for line in openfile:
                     w = line.split('=')
                     if len(w[1]) <2:
-                        path = raw_input('Enter path for NNPP2.2 directory')
-                        if os.path.exists(path+"/bin/fa2TDNNpred-PRO.linux"):
+                        NNPP2_path = raw_input('Enter path for NNPP2.2 directory test1')
+                        if os.path.exists(NNPP2_path+"/bin/fa2TDNNpred-PRO.linux"):
                             with open (wd+"/config.txt", 'w+')as openfile1:
-                                openfile1.write('NNPP2.2_path'+'='+path)
+                                openfile1.write('NNPP2.2_path'+'='+NNPP2_path)
                         else:
                             print "please enter correct path for NNPP2.2"
                             sys.exit(1)
@@ -1606,9 +1610,10 @@ def  config_file_check():
                         if os.path.exists(ss+"/bin/fa2TDNNpred-PRO.linux"):
                             NNPP2_path = w[1]
                             print 'nnpp path', NNPP2_path
-    if tmp == False:
-        with open (wd+"/config.txt", 'w+')as openfile1:
-            NNPP2_path = raw_input('Enter path for NNPP2.2 directory')
+    elif os.path.exists(wd+"/config.txt") == False:
+        print 'file not present'
+        with open (wd+"/config.txt", 'w')as openfile1:
+            NNPP2_path = raw_input('Enter path for NNPP2.2 directory test2')
             if os.path.exists(NNPP2_path+"/bin/fa2TDNNpred-PRO.linux"):
                 openfile1.write('NNPP2.2_path'+'='+NNPP2_path)
                 print '\nDone'
@@ -1626,6 +1631,7 @@ def Processing_details(file_name, start_time, counter):
     end_time = time.time()
     elapsed = end_time-start_time
     print 'Total time elapsed', elapsed
+    print 'Please check ', output_dir
 
 
     try:
