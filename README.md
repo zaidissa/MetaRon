@@ -17,6 +17,15 @@ MetaRon requires:
 	* Prodigal [conda install -c bioconda prodigal]
 	* BDGP: Neural Network Promoter Prediction 2.2
 
+If you already have Anaconda environment setup, you can quickly install the prerequisites using the following conda commands:
+1. IDBA
+	conda install -c bioconda idba
+	conda install -c bioconda/label/cf201901 idba
+2. Prodigal
+	conda install -c bioconda prodigal
+	conda install -c bioconda/label/cf201901 prodigal
+3. BDGP: Neural Network Promoter Prediction 2.2
+
 
 Install MetaRon
 ---------------
