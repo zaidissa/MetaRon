@@ -138,4 +138,7 @@ This will save metagenomic operon predictions ``Operon_File.tab``.  The predicti
 
 Support
 ========
-If you have questions, or found any bug in the program, please write to us at ``syedshujaat[at]comsats.edu.pk``
+If you have questions, or found any bug in the program, please write to us at 
+
+``syedshujaat[at]comsats.edu.pk``
+``syedzaidi[at]arizona.edu``
