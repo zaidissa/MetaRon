@@ -16,6 +16,8 @@ MetaRon requires:
 	* IDBA (iterative De Bruijn Graph De Novo Assembler) [conda install -c bioconda idba]
 	* Prodigal [conda install -c bioconda prodigal]
 	* BDGP: Neural Network Promoter Prediction 2.2
+	* antiSMASH: antibiotics & Secondary Metabolite Analysis Shell (Optional: required for downstream analysis only.)
+	* BOWTIE (Optional: only required for downstream analysis)
 
 If you already have Anaconda environment setup, you can quickly install the prerequisites using the following conda commands:
 1. IDBA
@@ -34,6 +36,13 @@ If you already have Anaconda environment setup, you can quickly install the prer
 	
 	conda install -c bioconda/label/cf201901 prodigal
 	
+3. antiSMASH
+
+	conda install -c bioconda antismash
+	
+	or
+	
+	conda install -c bioconda/label/cf201901 antismash
 
 
 Install MetaRon
@@ -135,6 +144,26 @@ If metagenomic scaffolds and gene predictions are already available, the user ca
 
 This will save metagenomic operon predictions ``Operon_File.tab``.  The prediction file will report the operonic information based on the above mentioned parameters. 
 
+
+Proposed downstream anslysis
+----------------------------
+
+1. Secondary Metabolites
+
+	a. Secondary Metabolites identified from operonic sequences using antiSMASH
+	
+	b. Differntial abundance of Secondary Metabolites (condition-1 / Disease vs Condition-2 / Control)
+	
+2. Operonnic pathways
+
+	a. Mapping raw metagenomic reads to operonic sequences using BOWTIE
+	
+	b. Submitting the mapped reads to Functional Mapping and Analysis Pipeline (FMAP)
+	
+	c. Identifying differential abundance of pathways between disease and control or environment-1 and environment-2
+
+
+	
 
 Support
 ========
