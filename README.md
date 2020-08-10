@@ -21,11 +21,17 @@ If you already have Anaconda environment setup, you can quickly install the prer
 1. IDBA
 	
 	conda install -c bioconda idba
+	
+	or
+	
 	conda install -c bioconda/label/cf201901 idba
 	
 2. Prodigal
 	
 	conda install -c bioconda prodigal
+	
+	or
+	
 	conda install -c bioconda/label/cf201901 prodigal
 	
 
