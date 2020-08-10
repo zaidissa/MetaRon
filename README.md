@@ -19,12 +19,11 @@ MetaRon requires:
 	* antiSMASH: antibiotics & Secondary Metabolite Analysis Shell (Optional: required for downstream analysis only.)
 	* BOWTIE (Optional: only required for downstream analysis)
 
-If you already have Anaconda environment setup, you can quickly install the prerequisites using the following conda commands:
+If you already have Anaconda environment setup, you can quickly install the prerequisites using any one command from each section:
 1. IDBA
 	
 	conda install -c bioconda idba
 	
-	or
 	
 	conda install -c bioconda/label/cf201901 idba
 	
@@ -32,7 +31,6 @@ If you already have Anaconda environment setup, you can quickly install the prer
 	
 	conda install -c bioconda prodigal
 	
-	or
 	
 	conda install -c bioconda/label/cf201901 prodigal
 	
@@ -40,9 +38,14 @@ If you already have Anaconda environment setup, you can quickly install the prer
 
 	conda install -c bioconda antismash
 	
-	or
 	
 	conda install -c bioconda/label/cf201901 antismash
+	
+4. BOWTIE2
+
+	conda install -c bioconda bowtie
+
+	conda install -c bioconda/label/cf201901 bowtie
 
 
 Install MetaRon
