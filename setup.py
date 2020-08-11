@@ -9,6 +9,8 @@ conditions of BSD License (see the file LICENSE.mc included with the distributio
 @email: syedshujaat@comsats.edu.pk; syedzaidi85@hotmail.co.uk
 """
 
+
+import pathlib
 import os
 from distutils.core import setup
 from setuptools import find_packages
@@ -23,7 +25,9 @@ CLASSIFIERS = [
     'Intended Audience :: Science/Research',
     'License :: OSI Approved :: BSD License',
     'Operating System :: OS Independent',
-    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
     'Topic :: Scientific/Engineering :: Bio-Informatics',
 ]
 
