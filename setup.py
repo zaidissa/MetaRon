@@ -4,7 +4,7 @@
 This is a setup script file for MetaRon -- a Metagenomic opeRon prediction pipeline.
 This is a freeware; user is allowed to redistribute it and/or modify it under the terms and
 conditions of BSD License (see the file LICENSE.mc included with the distribution).
-@version: 1.0
+@version: 2.0
 @author: Syed Shujaat Ali Zaidi
 @email: syedshujaat@comsats.edu.pk; syedzaidi85@hotmail.co.uk
 """
