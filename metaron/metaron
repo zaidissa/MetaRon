@@ -230,7 +230,7 @@ def main():
         print ('\n\n********************************** METAGENOMIC OPERON PREDICTION **********************************\n\n')
         scaf_len(old_pathname)
 ##        header_replacer_F()
-    gff2tab(sample_name)
+    	gff2tab(sample_name)
         gene_name_scaf, strand, gene_st, gene_end, file_name, scaftig_name, gene_name, scaf_name4dict = data_extraction(gene_file, gene_pred_tool)
         gene_name, strand, gene_st, gene_end,scaf_name_len_dict = seq_info2(gene_name_scaf, strand, gene_st, gene_end, file_name, scaftig_name, gene_name, scaf_name4dict)
         upstream_seq_len, scaftig_name_new, gene_name_new, strand_new, gene_st_new, gene_end_new, scaf_name4dict_new, upstream_st_pos, upstream_en_pos = upstream_coordinates_extraction(scaftig_name, gene_name, strand, gene_st, gene_end, scaf_name4dict)
