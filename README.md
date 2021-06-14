@@ -141,9 +141,9 @@ Metagenomic operon prediction could be performed by providing filtered raw reads
 If metagenomic scaffolds and gene predictions are already available, the user can predict operon under the process "op"
 
 	## test_assembly: ERR022075_scaf.fa 
-	## test_gene_prediction: ERR022075_MC
+	## test_gene_prediction: ERR022075
 
-	metaron --sample ERR022075 --process op --igp ERR022075_MC --isc ERR022075_scaf.fa --tool 1 OR 2 --output ~/path/to/output/directory/
+	metaron --sample ERR022075 --process op --igp ERR022075 --isc ERR022075_scaf.fa --tool 1 OR 2 --output ~/path/to/output/directory/
 
 This will save metagenomic operon predictions ``Operon_File.tab``.  The prediction file will report the operonic information based on the above mentioned parameters. 
 
