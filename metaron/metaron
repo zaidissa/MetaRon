@@ -389,8 +389,8 @@ def gene_prediction(scaftig_file, sample_name):
 
 ##    saving all lists to file
     zoo = zip(Scaf_gene, Strand, Gene_st, Gene_en, Gene_len)
-    with open (gene_file, 'wb') as out_file:
-        writer = csv.writer(out_file, delimiter = '\t', lineterminator = '\n')
+    with open (gene_file, 'w', newline='') as out_file:
+        writer = csv.writer(out_file, delimiter = '\t')
         writer.writerows(zoo)
     out_file.close()
     gene_pred_tool = ''
@@ -439,8 +439,8 @@ def gff2tab(sample_name):
 
 ##    saving all lists to file
     zoo = zip(Scaf_gene, Strand, Gene_st, Gene_en, Gene_len)
-    with open (gene_file, 'wb') as out_file:
-        writer = csv.writer(out_file, delimiter = '\t', lineterminator = '\n')
+    with open (gene_file, 'w', newline='') as out_file:
+        writer = csv.writer(out_file, delimiter = '\t')
         writer.writerows(zoo)
     out_file.close()
     gene_pred_tool = ''
